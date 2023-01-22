@@ -8,4 +8,3 @@ static/video/
 # Heroku Files
 Aptfile
 Procfile
-runtime.txt
