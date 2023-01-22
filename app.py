@@ -52,7 +52,7 @@ with open(classesFile, 'rt') as f:
 
 # Load model and configuration file
 modelConfiguration = "dnn_config_files/yolov3.cfg"
-modelWeights = "dnn_config_files/yolov3.weights"
+modelWeights = "https://nyc3.digitaloceanspaces.com/portfolio92/people-counter/model/yolov3.weights"
 net = cv.dnn.readNetFromDarknet(modelConfiguration, modelWeights)
 net.setPreferableBackend(cv.dnn.DNN_BACKEND_OPENCV)
 net.setPreferableTarget(cv.dnn.DNN_TARGET_CPU)
